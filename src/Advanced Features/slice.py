@@ -55,8 +55,17 @@ print(Str2.lstrip())
 print(seprator)
 
 def trim(s):
-    start  = 0
+    if (s == ''):
+        return s
+    
+    start = 0
     end = len(s) - 1
+    
+    if (s[start] == ' '):
+        return trim(s[start+1:])
+    
+    if (s[end] == ' '):
+        return trim(s[start:end-1])
     
     return s
 
