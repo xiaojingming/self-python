@@ -60,3 +60,21 @@ l8 = ['Hello', 'World', 'IBM', 'Apple']
 l9 = [s.lower() for s in l8]
 
 print(l9)
+
+print(separator)
+
+l10 = [s if s % 2 == 0 else -s for s in r1]
+
+print(l10)
+
+print(separator)
+
+L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = [s.lower() for s in L1 if isinstance(s, str)]
+
+# 测试:
+print(L2)
+if L2 == ['hello', 'world', 'apple']:
+    print('测试通过!')
+else:
+    print('测试失败!')
